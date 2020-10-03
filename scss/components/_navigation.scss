@@ -1,0 +1,34 @@
+// =====================================
+// Navigation
+// =====================================
+
+.nav-list {
+    margin-top: 30px;
+    .nav_item{
+        width: 100%;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 5px;
+        &:hover{
+            background-color: $teal-light;
+            a {
+                color: white;
+            }
+        }
+        a {
+            font-size: 1.5em;
+        }
+    }
+    @media (min-width:$brkpt){
+        @include mq('reg'){
+            margin-left: 50px;
+            .nav_item {
+                display: inline;
+                padding: 15px 8px;
+                a {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

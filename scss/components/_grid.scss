@@ -1,0 +1,37 @@
+// =====================================
+// Grid 
+// =====================================
+
+
+.container {
+    max-width: 85%;
+    margin: 50px auto;
+    text-align: center; 
+    @include mq('lrg'){
+        margin: 50px 200px;
+    }
+}
+.grid_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0;
+    @include mq('reg'){
+        flex-direction: row;
+    }
+    .grid_col-12 {
+        text-align: center;
+        @include mq('reg'){
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            width: 100%;
+        }
+    }  
+}
+.theme_colors.grid_col-7,
+.theme_colors.grid_col-8 {
+    flex: 2;
+}
+

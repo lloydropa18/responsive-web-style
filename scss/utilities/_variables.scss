@@ -1,0 +1,50 @@
+// =====================================
+// Variables
+// =====================================
+
+// =====================================
+// Colors Variables
+// =====================================
+$oceanBlue: #23badb;
+$green: #30b461;
+$red: #de6262;
+$orange: #fa9334;
+$purple: #8251a4;
+$teal-light: lighten(teal,20%);
+
+// =====================================
+// Font Variables
+// =====================================
+$font-stack-primary:'PT Sans', sans-serif;
+
+
+// =====================================
+// Breakpoints Variables
+// =====================================
+$brkpt : 769px;
+$brkpt-L : 1250px;
+
+// =====================================
+// Button Colors Variables
+// =====================================
+$btnColors : (
+    'default':$oceanBlue,
+    'success': $green,
+    'error': $red,
+    'warning': $orange,
+    'info': $purple, 
+);
+
+// =====================================
+// Grid Colors Variables
+// =====================================
+$gridColors : (
+    3 : lighten($purple,25%),
+    4 : lighten($oceanBlue,25%),
+    5 : lighten($green,30%),
+    6 : darken($oceanBlue,10%),
+    7 : lighten($red,25%),
+    8 : lighten($orange,25%),
+    12 : lighten($green,10%),
+)
+

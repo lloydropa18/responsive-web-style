@@ -1,0 +1,55 @@
+// =====================================
+// Mixins 
+// =====================================
+
+@mixin mq($width){
+    @if $width == 'reg'{
+        @media (min-width: $brkpt) {
+            @content;
+        }
+    }
+    @else if $width == 'lrg'{
+        @media (min-width: $brkpt-L) {
+            @content;
+        }  
+    }
+}
+
+@mixin btnBase {
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    font-size: 1.5em;
+    margin-top: 3%;
+    padding: 10px;
+    border-radius: 5px;
+    @content;
+}
+
+
+@each $btn,$color in $btnColors {
+    .theme_colors.btn-#{$btn}{
+        background-color: $color;
+        @include btnBase;
+        @include mq('reg'){
+           margin: 20px;
+        }
+    }
+}
+
+@each $grid,$color in $gridColors {
+    .theme_colors.grid_col-#{$grid}{
+        background-color: $color;
+        text-align: left;
+        @include btnBase;
+        text-transform: initial;
+        color: darken(grey,15%);
+        font-size: 1.2em;
+        @media (min-width:$brkpt){
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+        }
+    }
+}

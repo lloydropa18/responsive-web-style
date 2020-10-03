@@ -1,0 +1,28 @@
+// =====================================
+// Forms
+// =====================================
+
+input{
+    border: none;
+}
+
+
+.form {
+    @include mq('reg'){
+        width: 330px;
+    }
+}
+.form_input{
+    display:block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-bottom: 5px solid map-get($gridColors, 5);
+    &[placeholder]{
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+}
+.theme_colors.btn-default {
+    margin-left: 0;
+}

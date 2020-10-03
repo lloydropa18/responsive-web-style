@@ -1,0 +1,60 @@
+// =====================================
+// Base styles
+// =====================================
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $font-stack-primary;
+}
+
+// =====================================
+// Typography 
+// =====================================
+
+.grid_col-12 > .card {
+    text-align: left;
+    p:first-child {
+        padding: 10% 0%;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+}
+.grid_col-8 > .card{
+    max-width: 750px;
+    padding-right: 30px;
+}
+
+.headline-primary {
+    color: $teal-light;
+    font-size: 1.9em;
+    text-align: left;
+    margin: 25px;
+    & + p {
+        text-align: left;
+        font-size: 1.2em;
+    }
+}
+.headline-secondary {
+    color: lighten(grey,10%);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 30px 0;
+}
+
+.link {
+    color: $oceanBlue;
+    font-weight: bold;
+}
+blockquote {
+    border-left: 7px solid $teal-light;
+    padding-left: 5%;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}

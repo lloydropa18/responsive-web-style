@@ -1,0 +1,10 @@
+// =====================================
+// Button
+// =====================================
+
+.centered.theme_colors.grid_col-7{
+    @include mq('reg'){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
