@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    List Classes Used
+
+    Grid:
+    .container
+    .grid_row
+    .grid_col-2
+    .grid_col-3
+    .grid_col-4
+    .grid_col-5
+    .grid_col-6
+    .grid_col-7
+    .grid_col-8
+    .grid_col-9
+    .grid_col-10
+    .grid_col-11
+    .grid_col-12
+    .centered
+    .theme_colors
+
+    Typography:
+    .container
+    .link
+    .headline-primary
+    .headline-secondary
+
+    Image:
+    .img-logo
+    .img-frame
+    .img-avatar
+
+    Navigation:
+    .nav_item
+
+    Buttons:
+    .btn-default
+    .btn-success
+    .btn-error
+    .btn-warning
+    .btn-info
+    .theme_colors
+
+    Forms:
+    .form
+    .form_input
+
+  -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav id="nav-bar">
+            <div class="grid_row">
+                <header class="grid_col-3">
+                    <img class="img-logo" src="img/logo.png" alt="logo">
+                </header>
+                <ul class="nav-list grid_col-9">
+                    <li class="nav_item"><a href="#typography">Typography</a></li>
+                    <li class="nav_item"><a href="#buttons">Buttons</a></li>
+                    <li class="nav_item"><a href="#forms">Form</a></li>
+                    <li class="nav_item"><a href="#images">Images</a></li>
+                    <li class="nav_item"><a href="#grid">Grid</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navigation  -->
+
+        <!-- Showcase -->
+        <div class="grid_row">
+            <div class="grid_col-12">
+                <div class="card">
+                <p>This is what the navigation menu looks like when the screen is at 769px or higher. When the screen is less than 769px, the menu will be displayed vertically.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Showcase -->
+
+            <!-- Typography -->
+        <div class="grid_row" id="typography">
+            <div class="grid_col-8">
+                <div class="card">
+                    <h3 class="headline-secondary">Typography</h3>
+                    <h1 class="headline-primary">Take a look at this amazing headline</h1>
+                    <p>This is a typical paragraph for the UI Kit.<a href="#" class="link"> Here is what a link might look like</a>. The typical font family for this kit is Helvetica Neue. This kit is intended for clean and refreshing web layouts. No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes fully equipped with everything from full responsive media styling to buttons to form fields. <i>I enjoy using italics as well from time to time</i>. Fell free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)</p>
+                    <blockquote>You know what really gets me going? A really nice set of block quotes. That's right, block quotes that say, "Hey, I'm an article you want to read and nurture."</blockquote>
+                </div>
+            </div>
+        <!-- End typography -->
+
+        <!-- Form Section-->
+            <div class="grid_col-4" id="forms">
+                <form action="#" class="form">
+                    <legend class="headline-secondary ">Form Elements</legend>
+                    <img src="img/avatar.png" alt="avatar">
+                    <input class="form_input" type="text" placeholder="Username" name="username" id="user">
+                    <input class="form_input" type="password" placeholder="Password" name="password" id="pass">
+                    <input class="theme_colors btn-default" type="submit" value="LOGIN">
+                </form>
+            </div>
+        </div>
+        <!-- End Form Section-->
+
+
+        <!-- Images Section -->
+        <h3 class="headline-secondary" id="images">Images</h3>
+        <div class="grid_row">
+            <div class="grid_col-6">
+                <img class="img-frame" src="img/image.png" alt="image">
+            </div>
+            <div class="grid_col-6">
+                <img class="img-avatar" src="img/avatar.png" alt="avatar">
+            </div>
+        </div>
+        <!-- End Images Section -->
+        
+        <!-- Buttons -->
+        <h3 class="headline-secondary" id="buttons">Buttons</h3>
+        <div class="grid_row">
+            <div class="grid_col-12">
+                <button class="btn-default theme_colors">Default</button>
+                <button class="btn-success theme_colors">Success</button>
+                <button class="btn-error theme_colors">Error</button>
+                <button class="btn-warning theme_colors">Warning</button>
+                <button class="btn-info theme_colors">Info</button>
+            </div>
+        </div>
+        <!-- End Buttons -->
+
+        <!-- Grid System -->
+        <h3 class="headline-secondary" id="grid">Grid System</h3>
+            <div class="grid_row">
+                <div class="grid_col-12 theme_colors">.grid_col-12</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-6 theme_colors">.grid_col-6</div>
+                <div class="grid_col-6 theme_colors">.grid_col-6</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-4 theme_colors">.grid_col-4</div>
+                <div class="grid_col-4 theme_colors">.grid_col-4</div>
+                <div class="grid_col-4 theme_colors">.grid_col-4</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-3 theme_colors">.grid_col-3</div>
+                <div class="grid_col-3 theme_colors">.grid_col-3</div>
+                <div class="grid_col-3 theme_colors">.grid_col-3</div>
+                <div class="grid_col-3 theme_colors">.grid_col-3</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-5 theme_colors">.grid_col-5</div>
+                <div class="grid_col-7 theme_colors">.grid_col-7</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-8 theme_colors">.grid_col-8</div>
+                <div class="grid_col-4 theme_colors">.grid_col-4</div>
+            </div>
+            <div class="grid_row">
+                <div class="grid_col-7 centered theme_colors">.centered .grid_col-7</div>
+            </div>
+        </section>
+        <!-- End Grid System -->
+    </div>   
+</body>
+</html>
